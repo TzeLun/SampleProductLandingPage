@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=KoHo"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Krub"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Shanti"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>WheelMatch - Your Custom Wheel Manufacturer</title>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="header-logo.png" />
+      <nav id="nav-bar">
+        <a href="#about" class="nav-link">Who Are We?</a>
+        <a href="#feature" class="nav-link">Why Choose Us?</a>
+        <a href="#tips" class="nav-link">What To Consider?</a>
+        <a href="#product" class="nav-link">Products</a>
+        <a href="#form" class="nav-link">Get Started</a>
+        <div class="dropdown">
+          <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+            <i class="material-icons">menu</i>
+          </button>
+          <div id="dropdown-content" class="dropdown-content">
+            <a href="#about" class="drop-link">Who Are We?</a>
+            <a href="#feature" class="drop-link">Why Choose Us?</a>
+            <a href="#tips" class="drop-link">What To Consider?</a>
+            <a href="#product" class="drop-link">Products</a>
+            <a href="#form" class="drop-link">Get Started</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="main">
+      <div id="about">
+        <h1>Who Are We?</h1>
+        <p>
+          At WheelMatch, we provide custom wheel designs taking into account the
+          size, offset and other parameters to ensure the tires and wheels fit
+          perfectly on your vehicle. Our service includes wheel design
+          consultation, designing, fabrication, integration, installation and
+          maintenance of wheel.
+        </p>
+      </div>
+      <hr />
+      <div id="feature">
+        <h1>Why Choose Us?</h1>
+        <div class="feature-container">
+          <i class="material-icons">security</i>
+          <div>
+            Our wheel and tyre have a 3 year warranty period. No extra charges
+            needed should re-designing is needed as the wheel and tyre fail to
+            integrate into the vehicle.
+          </div>
+        </div>
+        <div class="feature-container">
+          <i class="material-icons">build</i>
+          <div>
+            We have partnerships with big tire companies like Michelin,
+            Bridgestone, Goodyear, Continental Tire and many more. Hence, you
+            may make appointment with them for maintenance if none of our branch
+            is conveniently within your reach.
+          </div>
+        </div>
+        <div class="feature-container">
+          <i class="material-icons">local_shipping</i>
+          <div>
+            Need to order spare tires? No worries! We keep records of our
+            customers wheel design. We will make as many spare tires as
+            requested and the best thing, SHIPPING FEE IS ON US!
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="tips">
+        <h1>What To Consider?</h1>
+        <p>
+          Can't wait to drive with style? We understand! However, for new car
+          enthusiast, we recommend checking out this video here to get an idea
+          on choosing wheels. Otherwise, consult our Team by first
+          <a href="#form">creating an account</a>.
+        </p>
+        <div class="video-wrapper">
+          <!-- Used for iframe responsive -->
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/6yurct68cD8"
+            width="852px"
+            height="480px"
+            allowfullscreen
+            >****Your Browser Doesn't Support iframe!****</iframe
+          >
+        </div>
+      </div>
+      <hr />
+      <div id="product">
+        <h1>Our Product</h1>
+        <p>
+          Below here is a catalogue of our previous clients' design request :
+        </p>
+        <div class="catalogue">
+          <div>
+            <div class="catalogue-title">Sample Design 1</div>
+            <img
+              class="catalogue-img"
+              src="https://i.pinimg.com/236x/69/99/4d/69994d852e3ac25d0a0a9301abcaafaf.jpg"
+              alt="custom wheel 1"
+              width="256px"
+              height="256px"
+            />
+            <div class="catalogue-caption">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+              Lorem ipsum.
+            </div>
+          </div>
+          <div>
+            <div class="catalogue-title">Sample Design 2</div>
+            <img
+              class="catalogue-img"
+              src="https://i.pinimg.com/236x/73/35/c3/7335c3e57766d01fe16fe96e0ec70b25.jpg"
+              alt="custom wheel 2"
+              width="256px"
+              height="256px"
+            />
+            <div class="catalogue-caption">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+              Lorem ipsum.
+            </div>
+          </div>
+          <div>
+            <div class="catalogue-title">Sample Design 3</div>
+            <img
+              class="catalogue-img"
+              src="https://i.pinimg.com/236x/e3/12/9b/e3129bfcfec176c865b7288fc0eb1187.jpg"
+              alt="custom wheel 3"
+              width="256px"
+              height="256px"
+            />
+            <div class="catalogue-caption">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.
+              Lorem ipsum.
+            </div>
+          </div>
+        </div>
+        <a id="explore" href="#">See More</a>
+      </div>
+      <hr />
+      <form
+        id="form"
+        action=" https://www.freecodecamp.com/email-submit"
+        autocomplete="on"
+      >
+        <h1>Get Started!</h1>
+        <p>
+          Take your first step by logging in with your WheelMatch account to
+          make appointments, design request, receive news on promotions and many
+          more!
+        </p>
+        <label id="email-label" for="email">Email Address :</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="sample@example.com"
+          required
+        />
+        <input type="submit" id="submit" name="submit" value="Login" />
+        <div class="register">
+          Don't have an account? We got your back!
+          <a href="#">Register for New Account</a>
+        </div>
+      </form>
+    </div>
+
+    <footer>&copy 2020 WheelMatch Pvt. Ltd. All Rights Reserved.</footer>
+
+    <script>
+      function dropdown() {
+        var drop_content = document.getElementById("dropdown-content");
+        var btn = document.getElementById("menu-btn");
+        btn.classList.toggle("btn-select");
+        if (drop_content.classList.contains("show")) {
+          drop_content.classList.remove("show");
+        } else {
+          drop_content.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

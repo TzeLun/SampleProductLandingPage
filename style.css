@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  text-align: center;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #d6d9da;
+  z-index: 2;
+}
+#header-img {
+  width: 250px;
+  height: auto;
+}
+.nav-link {
+  text-decoration: none;
+  color: #0f0c87;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+  display: inline-block;
+}
+.nav-link:hover {
+  color: #23b3b2;
+}
+.dropdown {
+  display: none;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  left: -140px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.menu-btn {
+  background-color: #0f0c87;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.menu-btn:hover {
+  opacity: 0.8;
+}
+.btn-select {
+  background-color: #4791d1;
+}
+.drop-link {
+  display: block;
+  text-decoration: none;
+  color: #0f0c87;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+  transition: 0.6s;
+  border-bottom: 1px solid #d6d9da;
+}
+.drop-link:hover {
+  background-color: #4791d1;
+  color: white;
+}
+/* display the vertical nav-bar when toggle the menu button */
+.show {
+  display: block;
+}
+#main {
+  margin: auto;
+  background-color: #edf0f1;
+  width: 80%;
+}
+#main > div,
+#main > form {
+  padding: 120px 20px 120px 20px; /* Solve the header overlapping section title issue */
+  margin: -70px 0px -70px 0px;
+}
+h1 {
+  color: #0f0c87;
+  font-size: 2.5rem;
+  font-family: KoHo, Krub, Helvetica, cursive;
+  text-transform: uppercase;
+}
+p,
+#email-label,
+#feature > div {
+  font-size: 1.2rem;
+  font-family: Krub, Shanti, cursive, monospace;
+}
+.feature-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  border-left: 10px solid #0c4a5f;
+  background-color: #ace2f4;
+}
+.feature-container .material-icons {
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: #4791d1;
+  color: white;
+  margin: 30px;
+  padding: 20px;
+}
+.feature-container > div {
+  text-align: left;
+  width: 90%;
+  padding: 20px;
+}
+#tips a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4791d1;
+}
+.video-wrapper {
+  width: 80%;
+  padding-top: 45%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+#video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.catalogue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.catalogue > div {
+  border: none;
+  margin: 0px 10px 10px 10px;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #0f0c87;
+}
+.catalogue-title {
+  font-family: Shanti, Krub, cursive, monospace;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+.catalogue-img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+}
+.catalogue-caption {
+  font-family: Shanti, Krub, cursive, monospace;
+  padding: 10px;
+  color: white;
+}
+#explore {
+  display: block;
+  padding: 20px;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #5baeca;
+  color: white;
+  text-decoration: none;
+  width: 50%;
+  font-family: Krub, Shanti, cursive, monospace;
+}
+input[id="email"] {
+  font-family: Krub, Shanti, cursive, monospace;
+  font-size: 1.2rem;
+  width: 40%;
+  border: 2px ridge gray;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #478aa6;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 0.5;
+}
+.register {
+  margin: 20px;
+  font-family: Krub, Shanti, cursive, monospace;
+  font-size: 1rem;
+}
+.register a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4791d1;
+}
+footer {
+  background-color: #d6d9da;
+  margin: 0px;
+  padding: 30px;
+  font-family: Krub, Shanti, cursive, monospace;
+  color: #0f0c87;
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width: 1080px) {
+  #main {
+    width: 100%;
+  }
+  .nav-link {
+    display: none;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .catalogue {
+    flex-direction: column;
+  }
+  .catalogue > div {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #header-img {
+    width: 150px;
+    height: auto;
+  }
+  .catalogue > div {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  input[id="email"] {
+    width: 80%;
+  }
+}
